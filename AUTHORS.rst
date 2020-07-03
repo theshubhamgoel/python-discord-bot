@@ -2,4 +2,4 @@
 Contributors
 ============
 
-* Goel, Shubham <Shubham.Goel@nielsen.com>
+* Goel, Shubham <theshubhamgoel@gmail.com>

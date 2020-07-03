@@ -16,10 +16,10 @@ Note: This skeleton file can be safely removed if not needed!
 """
 
 import argparse
-import sys
 import logging
+import sys
 
-from python_discord_bot import __version__
+from . import __version__
 
 __author__ = "Goel, Shubham"
 __copyright__ = "Goel, Shubham"

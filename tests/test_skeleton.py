@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 import pytest
-from python_discord_bot.skeleton import fib
+from src.python_discord_bot.skeleton import fib
 
 __author__ = "Goel, Shubham"
 __copyright__ = "Goel, Shubham"
