@@ -1,22 +1,33 @@
 import os
+import random
 
 import discord
 from dotenv import load_dotenv
 
-load_dotenv()
-TOKEN = os.getenv('DISCORD_TOKEN')
 print(TOKEN)
 
 client = discord.Client()
-
+@client.event
+async def on_ready():
+    print(f'{client.user} has connected to Discord!')
 
 @client.event
 async def on_message(message):
-    message.content = message.content.lower()
     if message.author == client.user:
         return
-    if message.content.startswith("hello"):
-        await message.channel.send("Hello " + str(message.author) + "!")
 
+    response_data = [
+        'I\'m the human form of the 💯 emoji.',
+        'Bingpot!',
+        (
+            'Cool. Cool cool cool cool cool cool cool, '
+            'no doubt no doubt no doubt no doubt.'
+        ),
+        'Bot can also talk.'
+    ]
 
-client.run('TOKEN')
+    if message.content == '!bot':
+        response = random.choice(response_data)
+        await message.channel.send(response)
+
+client.run(TOKEN)

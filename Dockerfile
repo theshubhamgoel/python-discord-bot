@@ -25,6 +25,7 @@ CMD tail -f /dev/null
 #Here are some Docker image/container build and running commands
 #docker build . --tag python-discord-bot:1.0
 #docker rmi $(docker images -qa -f 'dangling=true')
-# vi /usr/local/lib/python3.7/dist-packages/discord/client.py : 211 replace with connector=aiohttp.TCPConnector(verify_ssl=False)
+# vi /usr/local/lib/python3.8/dist-packages/discord/client.py : 211 
+# replace with connector = aiohttp.TCPConnector(verify_ssl=False)
 
 
